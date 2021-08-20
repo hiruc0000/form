@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 150px;
+  width: 50%;
+  max-width: 500px;
+}
+
+
+/* FORM DEFAULT STYLE */
+.group {
+  position: relative;
+  width: 100%;
+}
+
+.group:nth-child(n+2) {
+  margin-top: 40px;
+}
+
+.button-area {
+  margin-top: 30px;
+}
+
+input,
+textarea {
+  display: block;
+  padding: 4px 10px;
+  width: 100%;
+  font-size: 0.9rem;
+  outline: none;
+  border: 1px solid #afafaf;
+  border-radius: 5px;
+  background: none;
+  transition: all 0.3s;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #afafaf;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+
+/* FORM FOCUS STYLE */
+input:focus,
+textarea:focus {
+  outline: 2px solid #ffc56c;
+  border-color: #feba54;
+  box-shadow: 0 0 10px rgba(253, 163, 27, 0.9);
+}
+
+input:focus~label,
+textarea:focus~label {
+  color: #da942d;
+  top: -25px;
+}
+
+
+/* BUTTON STYLE */
+.button {
+  width: 90px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.submit {
+  margin-left: 5px;
+  background-color: #feba54;
+}
+
+.reset {
+  margin-left: 10px;
+}
+
+.button:hover {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+}
