@@ -29,8 +29,9 @@ body {
 input,
 textarea {
   display: block;
-  padding: 5px 5px;
-  width: 97%;
+  box-sizing: border-box;
+  padding: 8px 6px;
+  width: 100%;
   font-size: 0.9rem;
   outline: none;
   border: 1px solid #afafaf;
@@ -45,7 +46,7 @@ textarea {
 
 label {
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: 10px;
   font-size: 0.8rem;
   color: #afafaf;
