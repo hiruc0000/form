@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+
+    <title>Form03</title>
+
     <link rel="stylesheet" href="./form03.css">
 </head>
-
 <body>
-    <div class="wrapper">
-        <form>
-            <div class="group">
-                <input type="text" required="required" />
-                <span class="bar"></span>
-                <label>Name</label>
+    <h1>オーソドックスなコンタクトフォーム</h1>
+
+    <section class="contact-form-area">
+        <form action="">
+            <div class="contact-parts">
+                <label for="name">お名前<span class="req">*必須</span></label>
+                <input type="text" name="name" id="name" required>
             </div>
 
-            <div class="group">
-                <input type="text" required="required" />
-                <span class="bar"></span>
-                <label>Email</label>
+            <div class="contact-parts">
+                <label for="email">メールアドレス<span class="req">*必須</span></label>
+                <input type="text" name="email" id="email" required>
             </div>
 
-            <div class="group">
-                <textarea type="textarea" rows="8" required="required"></textarea>
-                <span class="bar"></span>
-                <label>Message</label>
+            <div class="contact-parts">
+                <label for="title">件名</label>
+                <input type="text" name="text" id="title" required>
             </div>
 
-            <div class="btn-box">
-                <button class="btn btn-submit" type="submit">submit</button>
-                <button class="btn btn-cancel" type="button">cancel</button>
+            <div class="contact-parts">
+                <label for="content">内容<span>*必須</span></label>
+                <textarea name="content" id="content" rows="10" required></textarea>
+            </div>
+
+            <div class="contact-parts button-area">
+                <input class="button" type="submit" value="send">
             </div>
         </form>
-    </div>
+    </section>
 </body>
-
 </html>
